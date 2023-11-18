@@ -26,9 +26,8 @@ def dow():
     b = random.randrange(0, height)
     window.title('Happy Everyday')  # 弹窗的名字，都可以修改的
     window.geometry("360x50" + "+" + str(a) + "+" + str(b))  # 弹窗大小，不建议修改
-    txt = ["小洋宝贝，今天也要快快乐乐哟！",
-           "大洋宝，今天的你是世界上最美的",
-           "小洋洋，老公厉害不厉害，爱你哟"]
+    txt = ["宝贝，今天也要快快乐乐哟！",
+           "宝，今天的你是世界上最美的"]
     # color = ["red", "yellow", "blue", "green", "pink"] #背景颜色随机
     color = ["#CC0000", "#FF0000", "#FF3333", "#FF0066"]
     tk.Label(window,
