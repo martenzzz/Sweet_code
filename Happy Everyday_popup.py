@@ -38,13 +38,13 @@ def dow():
              font=('楷体', 18),  # 字体和字体大小
              width=35, height=2  # 标签长宽
              ).pack()  # 固定窗口位置
-    CloseWindow(window, 30000).start()
+    CloseWindow(window, 2000).start()  # 每个窗口延时关闭时间ms
     window.mainloop()
 
 
 def main():
     threads = []
-    n = 100  # 需要的弹框数量，别太多了，电脑不好会死机
+    n = 5  # 需要的弹框数量，别太多了，电脑不好会死机
     for i in range(n):
         t = threading.Thread(target=dow)
         threads.append(t)
